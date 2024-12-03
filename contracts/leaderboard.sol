@@ -5,7 +5,7 @@ pragma solidity >=0.8.17;
 
 contract Leaderboard {
   address owner;
-  uint256 leaderboardLength = 20;
+  uint256 leaderboardLength = 25;
 
   struct User {
     address user;
