@@ -12,7 +12,7 @@ export const users = pgTable('users', {
 // Define the "recipients" table
 export type InsertRecipient = InferInsertModel<typeof recipients>;
 export const recipients = pgTable('recipients', {
-  id: serial('id').primaryKey(),
+  id: serial('id').primaryKey(), // primary key to recipent's table
   name: text('name').notNull().unique(),
   recipient: text('recipient').notNull(),
   created_at: timestamp('created_at').notNull().defaultNow(),
