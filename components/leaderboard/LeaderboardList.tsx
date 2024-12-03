@@ -5,6 +5,7 @@ import {
   lineaGoerli,
   thirdwebClient,
 } from '@/lib/utils/config';
+import React from 'react';
 import { leaderboardAbi } from '@/lib/utils/leaderboardAbi';
 import { getContract } from 'thirdweb/contract';
 import { useReadContract } from 'thirdweb/react';
