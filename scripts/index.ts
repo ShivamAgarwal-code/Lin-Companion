@@ -3,7 +3,7 @@ import { env } from '@/env';
 import { drizzle } from 'drizzle-orm/postgres-js';
 import postgres from 'postgres';
 
-// Disable prefetch as it is not supported for "Transaction" pool mode
+// Disable prefetch as it is not supported for "Transaction" pool
 const client = postgres(env.DATABASE_URL, { prepare: false });
 const db = drizzle(client);
 
