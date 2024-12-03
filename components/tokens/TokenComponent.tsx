@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Image from 'next/image';
 import { TokenPosition } from '@/app/actions/zerion';
 
